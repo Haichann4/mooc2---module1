@@ -4,30 +4,47 @@ html, body{
     background-color: #d3d2d2;
 }
 
-nav{
+.skip-link {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #634e4e;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav {
     color: white;
     padding: 10px 0;
     text-align: center;
+    display: inline-block;
+    width: 80%;
 }
 
-nav li{
+nav img {
+    width: 10%;
+}
+
+nav li {
     display: inline-block;
     list-style-type: none;
 }
 
-nav li a{
+nav li a {
     color: rgb(75, 65, 65);
     text-decoration: none;
     margin: 0 10px;
     background-color: rgb(170, 161, 147);
     padding: 10px;
     border-radius: 10px;
-    margin: 0 50px;
 }
 
-header{
+header {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 100px;
 }
 
 header img {
@@ -40,7 +57,25 @@ header img {
     display: block;
 }
 
-footer{
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer {
     text-align: center;
     padding: 10px 0;
     background-color: rgb(170, 161, 147);
@@ -50,10 +85,11 @@ footer{
     width: 100%;
 }
 
-main p{
+main p {
     margin: 20px;
     font-size: 1.2em;
 }
 
-
-
+#main-content{
+    height: 400px;
+}
